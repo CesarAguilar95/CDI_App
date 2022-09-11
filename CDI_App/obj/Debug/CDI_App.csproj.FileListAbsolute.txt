@@ -1,0 +1,11 @@
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\bin\Debug\CDI_App.exe.config
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\bin\Debug\CDI_App.exe
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\bin\Debug\CDI_App.pdb
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.csproj.AssemblyReference.cache
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.Properties.Resources.resources
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.csproj.GenerateResource.cache
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.csproj.CoreCompileInputs.cache
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.exe
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.pdb
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.Main.resources
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.csproj.SuggestedBindingRedirects.cache
