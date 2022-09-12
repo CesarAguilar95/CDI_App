@@ -8,4 +8,5 @@ C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.csproj.Cor
 C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.exe
 C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.pdb
 C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.Main.resources
-C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.ControlForm.resources
+C:\Users\Cesar_Aguilar\source\repos\CDI_App\CDI_App\obj\Debug\CDI_App.VentanaEtiquetado.resources

@@ -52,6 +52,7 @@ namespace CDI_App
 
                         {
                             MessageBox.Show("Bienvenido al sistema CDI");
+                            VerificacionUsuario(UsuarioTexto.Text);
                         }
                         else //aqui nos dice si esta mal la contraseña
                         {
@@ -77,6 +78,46 @@ namespace CDI_App
             {
                 ContraseñaTexto.PasswordChar = '*';
             }
+        }
+
+        private void VerificacionUsuario(string UsuarioEnviado) //Funcion que nos va a verificar el tipo de accesos del usuario
+        {
+            //Aqui se obtiene el usuario
+            string Usuario = UsuarioEnviado;
+            string TipoPermiso;
+            //Usuario 1, Admin = permiso para todo
+            //Usuario 2, SingleUser = Permiso solo etiquetado y consulta
+            //Usuario 3, ConsultUser = permiso para consulta
+
+
+            TipoPermiso = "SingleUser";//Esta variable se va a llenar desde la base de datos en la consulta
+
+            ControlForm AbrirForm = new ControlForm();
+
+
+            if(TipoPermiso == "Admin")//este permiso se lee de la base de datos
+            {
+                VariablesGlobales.Permisos = "Admin";
+            }
+
+            if (TipoPermiso == "SingleUser")//este permiso se lee de la base de datos
+            {
+                VariablesGlobales.Permisos = "SingleUser";
+            }
+
+            if (TipoPermiso == "ConsultUser")//este permiso se lee de la base de datos
+            {
+                VariablesGlobales.Permisos = "ConsultUser";
+            }
+
+            this.Hide();
+            AbrirForm.ShowDialog();
+            this.Show();
+
+            UsuarioTexto.Text = "";
+            ContraseñaTexto.Text = "";
+            checkBox1.Checked = false;
+
         }
     }
 }
