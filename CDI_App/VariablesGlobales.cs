@@ -9,7 +9,5 @@ namespace CDI_App
      public class VariablesGlobales
     {
         public static string Permisos;
-
-
     }
 }

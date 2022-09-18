@@ -19,10 +19,6 @@ namespace CDI_App
 
         private void Main_Load(object sender, EventArgs e)
         {
-            //float flotante;
-            //int entero;
-            //bool booleana;
-            //double doble;
 
         }
 

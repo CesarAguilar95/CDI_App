@@ -17,9 +17,31 @@ namespace CDI_App
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void VentanaEtiquetado_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola mundo");
+            this.Automatico.Checked = true;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(Manual.Checked == true)
+            {
+                TextMan.Enabled = true;
+
+                this.TextAut.Text = "Manual";
+            }
+        }
+
+        private void Automatico_CheckedChanged(object sender, EventArgs e)
+        {
+            if(Automatico.Checked == true)
+            {
+                this.TextAut.Text = ""; // aqui va atener el dato de donde se lee
+                TextMan.Text = "";
+                TextMan.Enabled = false;
+            }
         }
     }
 }
+

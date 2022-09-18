@@ -19,11 +19,11 @@ namespace CDI_App
 
         private void Etiquetado_Click(object sender, EventArgs e)
         {
-            VentanaEtiquetado Abrir = new VentanaEtiquetado();
+            VentanaEtiquetado VentanaEtiquetas = new VentanaEtiquetado();//Aqui se define la variable dewl tipo form 
 
-            Abrir.TopLevel = false;
-            PanelOpciones.Controls.Add(Abrir);
-            Abrir.Show();
+            VentanaEtiquetas.TopLevel = false;
+            PanelOpciones.Controls.Add(VentanaEtiquetas);
+            VentanaEtiquetas.Show();
 
         }
     }
