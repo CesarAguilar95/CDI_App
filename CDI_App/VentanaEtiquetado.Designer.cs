@@ -36,12 +36,14 @@ namespace CDI_App
             this.Manual = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.TextAut = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DescripcionText = new System.Windows.Forms.Label();
+            this.PLUText = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.EspecieText = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TextMan
@@ -125,26 +127,26 @@ namespace CDI_App
             this.TextAut.TabIndex = 8;
             this.TextAut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // DescripcionText
             // 
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(468, 415);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(527, 120);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Producto";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DescripcionText.BackColor = System.Drawing.Color.White;
+            this.DescripcionText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DescripcionText.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescripcionText.ForeColor = System.Drawing.Color.Black;
+            this.DescripcionText.Location = new System.Drawing.Point(468, 415);
+            this.DescripcionText.Name = "DescripcionText";
+            this.DescripcionText.Size = new System.Drawing.Size(527, 120);
+            this.DescripcionText.TabIndex = 9;
+            this.DescripcionText.Text = "Producto";
+            this.DescripcionText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // PLUText
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(468, 328);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(527, 44);
-            this.textBox1.TabIndex = 10;
+            this.PLUText.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PLUText.Location = new System.Drawing.Point(468, 328);
+            this.PLUText.Name = "PLUText";
+            this.PLUText.Size = new System.Drawing.Size(527, 44);
+            this.PLUText.TabIndex = 10;
             // 
             // label5
             // 
@@ -185,6 +187,30 @@ namespace CDI_App
             this.button3.TabIndex = 14;
             this.button3.Text = "Buscar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // EspecieText
+            // 
+            this.EspecieText.BackColor = System.Drawing.Color.White;
+            this.EspecieText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EspecieText.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EspecieText.ForeColor = System.Drawing.Color.Black;
+            this.EspecieText.Location = new System.Drawing.Point(99, 415);
+            this.EspecieText.Name = "EspecieText";
+            this.EspecieText.Size = new System.Drawing.Size(245, 120);
+            this.EspecieText.TabIndex = 15;
+            this.EspecieText.Text = "Producto";
+            this.EspecieText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(96, 392);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(208, 23);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Especie";
             // 
             // VentanaEtiquetado
             // 
@@ -192,12 +218,14 @@ namespace CDI_App
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(9)))), ((int)(((byte)(119)))));
             this.ClientSize = new System.Drawing.Size(1284, 551);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.EspecieText);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.PLUText);
+            this.Controls.Add(this.DescripcionText);
             this.Controls.Add(this.TextAut);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -222,11 +250,13 @@ namespace CDI_App
         private System.Windows.Forms.RadioButton Manual;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label TextAut;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label DescripcionText;
+        private System.Windows.Forms.TextBox PLUText;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label EspecieText;
+        private System.Windows.Forms.Label label7;
     }
 }

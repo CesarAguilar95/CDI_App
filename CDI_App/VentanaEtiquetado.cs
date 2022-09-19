@@ -10,13 +10,15 @@ using System.Windows.Forms;
 
 namespace CDI_App
 {
+
     public partial class VentanaEtiquetado : Form
     {
+        SQL_Connection Conexion;
+
         public VentanaEtiquetado()
         {
             InitializeComponent();
         }
-
 
         private void VentanaEtiquetado_Load(object sender, EventArgs e)
         {
@@ -41,6 +43,22 @@ namespace CDI_App
                 TextMan.Text = "";
                 TextMan.Enabled = false;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string PLUBuscado = PLUText.Text;
+
+            Conexion = new SQL_Connection();//Aqui el constructor de la conexion nueva
+            Conexion.ConsultaSQL("SELECT Descripcion, Especie FROM T_CatalogoInicial WHERE ID_PLU = '" + PLUBuscado + "' ");//Aqui envia la consulta a la conexion nueva
+            Console.WriteLine("SELECT Descripcion, Especie FROM T_CatalogoInicial WHERE ID_PLU = '" + PLUBuscado + "' ");
+
+            foreach(DataRow DR in Conexion.ConsultaConSalida().Rows)//Aqui descarga la informacion de el return _DT de la misma conexion 
+            {
+                DescripcionText.Text = DR[0].ToString();
+                EspecieText.Text = DR[1].ToString();
+            }
+
         }
     }
 }
